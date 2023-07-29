@@ -1,0 +1,184 @@
+body{
+    background-color: bisque;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 90px;
+}
+
+
+a:link, a:visited{
+    color: firebrick;
+    text-decoration: underline;
+}
+
+
+li{
+    border: 1px solid black;
+    background-color: burlywood;    
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 3%;
+    font-size: x-large;
+}
+
+li:hover{background-color: orange;}
+
+.first-div p{
+    text-transform: uppercase;
+    color: darkblue;
+    font-size: xx-large;
+    font-weight: bold;
+    text-align: center;
+    height: 200px;
+    padding-top: 50px;
+}
+
+.first-div nav ul li.active a{
+    color: red;
+}
+
+
+.first-div{
+    background-image: url(img/fond-acceuil.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div p{
+    font-size: x-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.center{text-align: center;}
+
+.second-div p{
+    font-weight: bold;
+    margin-top: 4rem;
+}
+
+.container{
+    margin-left:10%;
+    display: grid;
+    grid-template-columns: repeat(3, 0.5fr);
+    grid-template-rows: repeat(3, 20rem);
+}
+
+.container div{
+    border: 1px solid transparent;
+}
+
+.container div:hover, .logo:hover{
+    opacity: 0.4;
+    text-decoration: underline;
+}
+
+.container img{
+    width: 15rem;
+    height: 10rem;
+} 
+
+.container p{
+    font-size: large;
+    margin-top: 3rem;
+}
+
+footer{background-color: beige;}
+
+footer nav ul{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10%;
+}
+
+footer nav ul li{
+    background-color: transparent;
+    border: 0;
+}
+.reseaux{
+    margin-top: -170px;
+}
+
+.reseaux ul li{
+    background-color: transparent; 
+    border: 0;
+}
+
+.follow{
+    font-size: xx-large;
+    font-weight: bold;
+    text-align: center;
+}
+
+.logo{
+    margin-top: 20px;
+    width: 50px;
+    height: 50px;
+}
+
+nav .icone{
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    width: 35px;
+    height: 25px;
+}
+
+@media screen and (max-width: 810px) {
+    .container{
+        display:flex;
+        flex-direction: column;
+        margin-left: 25%;
+    }
+
+    .container p{
+        margin-top: 1rem;
+    }
+
+    nav .icone{
+        display: block;
+    }
+    
+    .nav-links{
+        position: absolute;
+        width: 100%;
+        margin-top: -200%;
+        transition: all 0.5s ease;
+    }
+
+    .first-div p{padding: 0;}
+
+    .first-div .menu{
+        margin-top: 0;
+        backdrop-filter: blur(8px);
+    }
+
+    .nav-links ul{
+        display: flex;
+        flex-direction: column;
+    }
+
+    li{
+        background-color: transparent; 
+        border: 0; 
+        margin-top: 25px; 
+        display: flex;
+        justify-content: center;
+    }
+
+    footer nav ul li{
+        background-color: burlywood; 
+        margin-left: 10px;
+    }
+    
+    .reseaux{margin-top: 3%;}
+
+}
+
+

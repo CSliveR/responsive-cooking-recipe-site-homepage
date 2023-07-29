@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tarte aux fraises classique</title>
+</head>
+<body>
+    <div class="first-div">
+        <p>recettes de cuisine</p>
+        <nav>
+            <div class="nav-links">
+                <ul>
+                    <li class="active"><a href="../index.html">Acceuil</a></li>
+                    <li><a href="plat.html">Recettes par plat</a></li>
+                    <li><a href="sante-allergie.html">Recettes santé & allergie</a></li>
+                    <li><a href="theme.html">Recettes par thème</a></li>
+                    <li><a href="ailleurs.html">Recettes d'ailleurs</a></li>
+                    <li><a href="saison.html">Recettes de saison</a></li>
+                </ul>
+            </div>
+            <img class="icone" src="img/menu-hamburger.png" alt="">
+        </nav>
+        
+    </div>
+
+    <h1>Tarte aux fraises classique</h1>
+    
+    <div class="second-div">
+        <section>
+            <h2>Etapes de préparation :</h2>
+    
+            <p>1. Commencez par préparer la crème. Mélangez les jaunes d'oeuf avec le sucre. Battez au fouet jusqu'à ce que le mélange blanchisse. Ajoutez la farine et mélangez bien. Ajoutez la farine au mélange sucre/oeufs. Ajoutez 10cl de lait pour que le mélange soit plus liquide.</p>
+            <p>2. Mettez à chauffer le lait (90cl). Lorsque le lait est bien chaud, versez le sur le mélange précédent tout en battant bien au fouet. Puis remettez le tout à feu doux tout en continuant de battre rapidement. Mélangez énergiquement jusqu’à ce que la crème épaississe puis laissez la refroidir.</p>
+            <p>3. Passez à la préparation de votre pâte. Mettez la farine dans un saladier, creusez un trou et versez le sucre. Cassez l’œuf par dessus et rajoutez le beurre coupé en morceaux. Rassemblez et malaxez pour faire une boule. Placez votre boule de pâte dans un film plastique et mettez la au frais 10min.</p>
+            <p>4. Sortez votre pâte du frigo et disposez là dans un plat à tarte légèrement fariné. Piquez votre tarte avec une fourchette avant d'enfourner. Faites cuire 10min au four préchauffé à 220 degrés, surveillez bien la cuisson et n’hésitez pas à rajouter un peu si la pâte n’est pas assez dorée.</p>
+            <p>5. Sortez-la du four, démoulez-la, garnissez votre fond de tarte de crème et ajoutez les fraises ! Petite astuce si vous avez des chutes de pâte, vous pouvez, à l'aide d'un vide pomme formez des ronds, les enfourner puis les saupoudrer de sucre glace avant de les disposer sur votre tarte pour un effet esthétique en plus !</p>
+            
+            <img src="img/tarte-fraise.png" alt="">
+        </section>
+
+        <section>
+            <h2>Ingrédients (pour 10 personnes) :</h2>
+            <ul>
+                <li>500 g de fraises</li>
+                <h3>Pour la crème pâtissière:</h3>
+                <li>100 g de farine</li>
+                <li>400 g d'oeuf</li>
+                <li>200 g de sucre</li>
+                <li>1 l de lait</li>
+                <li>1 c.à.c d'arôme vanille</li>
+                <h3>Pour la pâte:</h3>
+                <li>200 g de beurre mou</li>
+                <li>300 g de farine</li>
+                <li>100 g de sucre</li>
+                <li>1 oeuf</li>
+            </ul>
+        </section>
+    </div>
+
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="#">Nous contacter</a></li>
+                <li><a href="#">Qui sommes-nous ?</a></li>
+                <li><a href="#">Mentions légales</a></li>
+            </ul>
+        </nav>
+
+        <p class="follow">Suivez-nous sur:</p>
+        <nav class="reseaux">
+            <ul>
+                <li><a href="https://www.instagram.com/"><img class="logo" src="img/logo-insta.jpg" alt=""></li></a>
+                <li><a href="https://fr-fr.facebook.com/"><img class="logo" src="img/logo-facebook.png" alt=""></li></a>
+                <li><a href="https://twitter.com/?lang=fr"><img class="logo" src="img/logo-twitter.png" alt=""></li></a>
+            </ul>
+        </nav>
+    </footer>
+    
+</body>
+
+<script>
+    const menuHamburger = document.querySelector(".icone");
+    const navLinks = document.querySelector(".nav-links");
+    menuHamburger.addEventListener('click', () => {navLinks.classList.toggle('menu')});
+</script>
+
+</html>
